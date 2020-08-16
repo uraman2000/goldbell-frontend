@@ -26,9 +26,9 @@
     "start": "react-scripts start",
     "start-credit-officer": "cross-env REACT_APP_VERSION=CREDIT_OFFICER react-scripts start",
     "start-borrower": "cross-env REACT_APP_VERSION=BORROWERS react-scripts start",
-    "build": "react-scripts build",
-    "build borrower": "cross-env REACT_APP_VERSION=BORROWERS react-scripts build",
-    "build-credit-officer": "cross-env REACT_APP_VERSION=CREDIT_OFFICER react-scripts build",
+    "build": "CI= react-scripts build",
+    "build borrower": "cross-env REACT_APP_VERSION=BORROWERS CI= react-scripts build",
+    "build-credit-officer": "cross-env REACT_APP_VERSION=CREDIT_OFFICER CI= react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "ssh": "ssh root@128.199.64.141"
